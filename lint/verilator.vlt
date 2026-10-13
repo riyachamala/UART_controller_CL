@@ -1,0 +1,6 @@
+`verilator_config
+// Integer parameters (32-bit) intentionally initialise narrower sized
+// localparam constants (bit counters, NCO operands). Waive only that pattern;
+// every other width mismatch is still reported.
+lint_off -rule WIDTHEXPAND -file "*rtl/*" -match "*expects * bits on the Initial value*"
+lint_off -rule WIDTHTRUNC  -file "*rtl/*" -match "*expects * bits on the Initial value*"

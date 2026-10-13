@@ -1,0 +1,9 @@
+build/
+fpga/basys3/out/
+fpga/basys3/.Xil/
+*.jou
+*.log
+*.vcd
+*.fst
+__pycache__/
+.venv/
